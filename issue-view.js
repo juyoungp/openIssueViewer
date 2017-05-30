@@ -4,27 +4,24 @@
 function IssueView(data){
 
 	this.gitAddress = "https://api.github.com/repos/" + data.repo;
-	this.issues = this.gitAddress + "/issues";
 
 	this.renderInto = function(id){
-		var lListForTable = [];
-		//var containerId = document.getElementById(container);
-		$.getJSON(this.gitAddress,{},function(data){
-			console.log(data);
-					
-			if(data['has_issues']){
-				console.log("open issues are : " + data['open_issues_count']);
-				$.getJSON('https://api.github.com/repos/nasa/openmct/issues',{},function(result){
-							
-					drawTable(result,id);
 
-				});
+		var issueAddress = this.gitAddress + "/issues";
+		
+		$.getJSON(this.gitAddress,{},function(data){
+			if(data['has_issues']){
+				$.getJSON(issueAddress,{},function(result){
+					drawTable(result,id);
+				});	
+			} else {
+				alert("There is No open issue!");
 			}
 
 		});
 
 		function drawTable(result, containerId){
-			console.log(result.length);
+
 			var lListForFilter = [''];
 			var table = document.createElement('table');
 			table.id = 'issueTable';
