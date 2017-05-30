@@ -13,6 +13,6 @@ issueView.renderInto(container);
 
 You can view openIssueViewer.html for reference. 
 
-****When you test locally****
+****When you test locally**** --->
 Becuase of Same Origin Policy in Chrome, you will have to open Chrome with command on terminal: open /Applications/Google\ Chrome.app --args --allow-file-access-from-files when you test your written html file.
 Otherwise, you will have to run server in order to correctly test out ajax call inside the library.
