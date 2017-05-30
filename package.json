@@ -1,0 +1,28 @@
+{
+  "name": "issue_viewer_test_package",
+  "version": "1.0.0",
+  "description": "This is a javascript file for github open issues",
+  "main": "issue-view.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juyoungp/openIssueViewer.git"
+  },
+  "keywords": [
+    "github",
+    "open",
+    "issue",
+    "viewer"
+  ],
+  "author": "Ju Young Park",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juyoungp/openIssueViewer/issues"
+  },
+  "homepage": "https://github.com/juyoungp/openIssueViewer#readme",
+  "dependencies": {
+    "issueviewer": "^1.0.0"
+  }
+}
