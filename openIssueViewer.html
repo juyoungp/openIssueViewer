@@ -1,0 +1,18 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="issue-view.js"></script>
+	</head>
+	<body>
+		<div id="issue-list-container">
+        </div>
+	</body>
+	<script>
+
+		var issueView = new IssueView({repo: 'nasa/openmct'});
+		var container = document.getElementById('issue-list-container');
+		issueView.renderInto(container);
+
+	</script>
+</html>
