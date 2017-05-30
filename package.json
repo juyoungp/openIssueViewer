@@ -1,7 +1,7 @@
 {
-  "name": "issue_viewer_test_package",
-  "version": "1.0.0",
-  "description": "This is a javascript file for github open issues",
+  "name": "issue_viewer_package",
+  "version": "1.0.1",
+  "description": "This is a javascript library for github issue viewer",
   "main": "issue-view.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/juyoungp/openIssueViewer#readme",
   "dependencies": {
-    "issueviewer": "^1.0.0"
+    "issueviewer": "^1.0.1"
   }
 }
