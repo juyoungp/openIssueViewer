@@ -11,6 +11,7 @@ var issueView = new IssueView({repo: 'nasa/openmct'});
 var container = document.getElementById('issue-list-container');
 issueView.renderInto(container);
 
+Please make sure include jquery in your project.
 You can view openIssueViewer.html for reference. 
 
 ****When you test locally**** ---> (For Mac Users)
